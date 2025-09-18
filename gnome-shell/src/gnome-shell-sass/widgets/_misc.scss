@@ -42,7 +42,7 @@
   padding-bottom: 8px;
   @extend %caption;
   color: if($variant == 'light', $fg_color, $warning_bg_color);
-  background-color: if($variant == 'light', $warning_bg_color, transparent);
+  background-color: if($variant == 'light', lighten($warning_bg_color, 10%), transparent);
   border-radius: 3px;
 }
 
